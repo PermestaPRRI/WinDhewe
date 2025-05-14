@@ -112,14 +112,10 @@ const Sidebar: FC<SidebarProps> = ({ height }) => {
         {
           action: () => {
             setHaltSession(true);
-
-            import("contexts/fileSystem/functions").then(({ resetStorage }) =>
-              resetStorage(rootFs).finally(() => window.location.reload())
-            );
           },
           icon: <Power />,
           name: "Power",
-          tooltip: "Clears session data and reloads the page.",
+          tooltip: "Reloads the page.",
         },
       ].filter(Boolean) as SidebarButtons,
     [buttonAreaCount, collapsed, open, rootFs, setHaltSession]
