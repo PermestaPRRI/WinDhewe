@@ -1,6 +1,7 @@
 # WINDHEWE
 
 ### Windows in your "dhewe" device
+\* Dhewe = own (Javanese)
 Credit: [DustinBrett/DaedalOS](https://github.com/dustinbrett/daedalos)
 
 # About Daedal OS
