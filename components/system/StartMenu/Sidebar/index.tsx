@@ -108,8 +108,24 @@ const Sidebar: FC<SidebarProps> = ({ height }) => {
               name: "Videos",
               ...(collapsed && { tooltip: "Videos" }),
             }
-          : undefined,      
+          : undefined,
+        {
+          action: () => {
+            setHaltSession(true);
+
+            import("contexts/fileSystem/functions").then(({ resetStorage }) =>
+              resetStorage(rootFs).finally(() => window.location.reload())
+            );
+          },
+          icon: <Power />,
+          name: "Power",
+          tooltip: "Clears session data and reloads the page.",
+        },
+      ].filter(Boolean) as SidebarButtons,
+    [buttonAreaCount, collapsed, open, rootFs, setHaltSession]
   );
+
+  useEffect(() => clearTimer, []);
 
   return (
     <StyledSidebar
