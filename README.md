@@ -1,6 +1,9 @@
-## 🌌 **daedalOS** 🌌
+# WINDHEWE
 
-## _Desktop environment in the browser_
+### Windows in your "dhewe" device
+Credit: [DustinBrett/DaedalOS](https://github.com/dustinbrett/daedalos)
+
+# About Daedal OS
 
 ![Screenshot](https://raw.githubusercontent.com/DustinBrett/daedalOS/refs/heads/main/public/screenshot.png?raw=true)
 
